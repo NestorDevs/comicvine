@@ -25,9 +25,9 @@ class ComicsServices {
       Response response = await dio.get(getComics);
       log(response.data['results'].toString());
 
-      final results = response.data['results'];
+      //final results = response.data['results'];
 
-      return results;
+      return response.data['results'].toList();
     } catch (e) {
       print('ESTAMOS EN ERRORRRRR');
       log(e.toString());

@@ -1,13 +1,3 @@
-// To parse this JSON data, do
-//
-//     final comic = comicFromJson(jsonString);
-
-import 'dart:convert';
-
-Comic comicFromJson(String str) => Comic.fromJson(json.decode(str));
-
-String comicToJson(Comic data) => json.encode(data.toJson());
-
 class Comic {
   Comic({
     this.error,
